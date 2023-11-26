@@ -38,3 +38,5 @@ while True:
 print("Números ingresados:", numeros)
 print("Cantidad de números pares:", pares)
 print("Cantidad de números impares:", impares)
+
+
