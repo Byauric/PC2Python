@@ -31,3 +31,20 @@ Nota:
 - Los métodos de listas y string le resultarán de gran utilidad.
 - Nota que si empleamos print(f"{n:02}") , esta completará con 0 valos a la izquierda de un
 número"""
+
+def convertir_fecha(input_fecha):
+    meses = [
+        "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+        "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+    ]
+    if '/' in input_fecha:
+        mes, dia, anio = map(int, input_fecha.split('/'))
+    else:
+        mes_nombre, dia, anio = input_fecha.split()
+        mes = meses.index(mes_nombre) + 1 
+    fecha_formateada = f"{anio:04d}-{mes:02d}-{dia:02d}"
+
+    return fecha_formateada
+input_fecha = input("Ingrese una fecha en formato mes-día-año o Mes dia, año: ")
+fecha_formateada = convertir_fecha(input_fecha)
+print(f"Fecha formateada: {fecha_formateada}")
