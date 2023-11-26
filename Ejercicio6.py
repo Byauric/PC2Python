@@ -3,3 +3,12 @@
 Nota: La secuencia de Fibonacci es la serie de números:
 0, 1, 1, 2, 3, 5, 8, 13, 21,. ...
 Cada número siguiente se obtiene sumando los dos números anteriores."""
+
+def fibonacci_hasta_50():
+    a, b = 0, 1
+    while a <= 50:
+        print(a, end=", ")
+        a, b = b, a + b
+fibonacci_hasta_50()
+
+
