@@ -17,3 +17,4 @@ if es_primo(numero_a_verificar):
     print(f"{numero_a_verificar} es un número primo.")
 else:
     print(f"{numero_a_verificar} no es un número primo.")
+
