@@ -22,3 +22,6 @@ while True:
 print("\nListado completo de alumnos:")
 for alumno in lista_alumnos:
     print(f"Alumno: {alumno['Alumno']}, Notas: {alumno['Notas']}")
+
+
+    
