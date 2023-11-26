@@ -7,3 +7,14 @@ minúsculas.
 Ejemplo:
 - Input: Twitter Output: Twttr
 - Input: What's your name? Output: Wht's yr nm?"""
+
+def omitir_vocales(cadena):
+    resultado = ""
+    for caracter in cadena:
+        if caracter.lower() not in ['a', 'e', 'i', 'o', 'u']:
+            resultado += caracter
+    return resultado
+
+entrada_usuario = input("Ingresa una cadena de texto: ")
+resultado = omitir_vocales(entrada_usuario)
+print("Resultado:", resultado)
